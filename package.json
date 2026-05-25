@@ -1,0 +1,25 @@
+{
+  "name": "taka-platform",
+  "version": "1.0.0",
+  "description": "Taka Platform - Premium B2B SaaS",
+  "private": true,
+  "scripts": {
+    "dev": "cd web && npm run dev",
+    "build": "cd web && npm run build",
+    "start": "cd web && npm run start",
+    "lint": "cd web && npm run lint"
+  },
+  "workspaces": [
+    "web",
+    "mobile"
+  ],
+  "keywords": [
+    "saas",
+    "b2b",
+    "platform",
+    "next.js",
+    "react-native"
+  ],
+  "author": "Taka Platform",
+  "license": "MIT"
+}
