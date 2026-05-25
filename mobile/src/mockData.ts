@@ -1,0 +1,116 @@
+export const mockTechnicianOrders = [
+  {
+    id: 'ORD-2024-001',
+    clientName: 'Industrial Solutions SA',
+    type: 'Fumigación',
+    status: 'En Ejecución',
+    date: '2024-05-25',
+    time: '10:00',
+    location: 'Madrid, España',
+    address: 'Calle Principal 123, Madrid',
+    description: 'Fumigación integral de almacén',
+    priority: 'Alta',
+    checklistItems: [
+      { id: '1', name: 'Llegada al lugar', completed: true },
+      { id: '2', name: 'Validación de ubicación', completed: true },
+      { id: '3', name: 'Preparación de insumos', completed: false },
+      { id: '4', name: 'Ejecución del servicio', completed: false },
+      { id: '5', name: 'Carga de evidencias', completed: false },
+      { id: '6', name: 'Firma del cliente', completed: false },
+    ],
+    supplies: ['Insecticida', 'Fungicida', 'Material de protección'],
+  },
+  {
+    id: 'ORD-2024-002',
+    clientName: 'Municipalidad de Madrid',
+    type: 'Limpieza',
+    status: 'Programada',
+    date: '2024-05-26',
+    time: '14:00',
+    location: 'Madrid, España',
+    address: 'Avenida del Ayuntamiento 456, Madrid',
+    description: 'Limpieza y desinfección de oficinas',
+    priority: 'Media',
+    checklistItems: [
+      { id: '1', name: 'Llegada al lugar', completed: false },
+      { id: '2', name: 'Validación de ubicación', completed: false },
+      { id: '3', name: 'Preparación de insumos', completed: false },
+      { id: '4', name: 'Ejecución del servicio', completed: false },
+      { id: '5', name: 'Carga de evidencias', completed: false },
+      { id: '6', name: 'Firma del cliente', completed: false },
+    ],
+    supplies: ['Desinfectante', 'Escobas', 'Trapeadores'],
+  },
+  {
+    id: 'ORD-2024-003',
+    clientName: 'García & Asociados',
+    type: 'Control de Plagas',
+    status: 'Finalizada',
+    date: '2024-05-24',
+    time: '09:00',
+    location: 'Barcelona, España',
+    address: 'Paseo de la Industria 789, Barcelona',
+    description: 'Revisión de trampas y control mensual',
+    priority: 'Media',
+    checklistItems: [
+      { id: '1', name: 'Llegada al lugar', completed: true },
+      { id: '2', name: 'Validación de ubicación', completed: true },
+      { id: '3', name: 'Preparación de insumos', completed: true },
+      { id: '4', name: 'Ejecución del servicio', completed: true },
+      { id: '5', name: 'Carga de evidencias', completed: true },
+      { id: '6', name: 'Firma del cliente', completed: true },
+    ],
+    supplies: ['Cebos', 'Trampas', 'Sellador'],
+  },
+]
+
+export const mockPlagues = [
+  {
+    id: '1',
+    clientId: '1',
+    clientName: 'Industrial Solutions SA',
+    type: 'Control de Plagas',
+    traps: [
+      { id: 'T-001', code: '001', location: 'Entrada', status: 'Activa', lastCheck: '2024-05-24', bait: 70 },
+      { id: 'T-002', code: '002', location: 'Almacén', status: 'Pendiente', lastCheck: '2024-05-20', bait: 30 },
+      { id: 'T-003', code: '003', location: 'Cocina', status: 'Activa', lastCheck: '2024-05-25', bait: 85 },
+    ],
+  },
+]
+
+export const mockTechnician = {
+  id: '1',
+  name: 'Carlos Mendoza',
+  email: 'carlos@taka.com',
+  phone: '+34 612 345 678',
+  specialties: ['Fumigación', 'Control de Plagas', 'Limpieza'],
+  status: 'Activo',
+  avatar: '👨‍🔧',
+}
+
+export const mockNotifications = [
+  {
+    id: '1',
+    type: 'Nueva Orden',
+    title: 'Nueva orden asignada',
+    message: 'Industrial Solutions SA - Fumigación',
+    timestamp: '2024-05-25T09:30:00',
+    read: false,
+  },
+  {
+    id: '2',
+    type: 'Cambio de Agenda',
+    title: 'Servicio reprogramado',
+    message: 'Municipalidad de Madrid - Limpieza',
+    timestamp: '2024-05-25T08:15:00',
+    read: true,
+  },
+  {
+    id: '3',
+    type: 'Trampa Pendiente',
+    title: 'Trampa T-002 requiere revisión',
+    message: 'Industrial Solutions SA',
+    timestamp: '2024-05-24T16:45:00',
+    read: true,
+  },
+]
